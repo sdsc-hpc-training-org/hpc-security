@@ -3,6 +3,6 @@ In these tutorials, you will use your SDSC or XSEDE account to log onto the and 
 
 ## Updated   July 2020
 
-* [Connecting to Comet](https://github.com/sdsc-hpc-training-org/hpc-security/blob/master/connecting-to-hpc-systems/README.md)
+* [Connecting to Comet](https://github.com/sdsc-hpc-training-org/hpc-security/blob/master/connecting-to-hpc-systems/connect-to-comet.md)
 
 
