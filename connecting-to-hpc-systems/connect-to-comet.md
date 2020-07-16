@@ -16,7 +16,7 @@ SSH provides a secure channel over any network in a client-server architecture (
 
 This tutorial can be used to verify that your account is working, that your laptop is properly configured, and that your Comet user environment is correctly setup. If you are new to Unix, please see the [Basic Linux Skills](https://github.com/sdsc-hpc-training-org/basic_skills) tutorial.
 
-<a name="top">Contents:
+<a name="top"></a>Contents:
     
 * [Read the Comet User Guide](#comet-guide)
 * [Obtain your Comet account](#comet-account)
