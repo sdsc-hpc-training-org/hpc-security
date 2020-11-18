@@ -52,8 +52,6 @@ You will be directed to the *XSEDE portal*, where you will create a *Portal User
 
 ## Locate/Install the Terminal App <a name="term-app"></a>
 
-
-
 *NOTE: The `hostname` for Expanse is `expanse.sdsc.edu`
 
 <img src="./images/cluster-connection-diagram.png" alt="SSH Connection" width="350px" />
@@ -145,31 +143,30 @@ You can log onto Expanse using either the DN or the IP addresses.
 ### Making the Connection <a name="connection"></a>
 ```
 [localuser@localhost]: ssh -X username@expanse.sdsc.edu
-Password: 
-Last login: Tue Jul 14 09:13:28 2020 from 12.345.678.91
-Rocks 7.0 (Manzanita)
-Profile built 13:03 03-Dec-2019
+Welcome to Bright release         9.0
 
-Kickstarted 14:18 03-Dec-2019
-                                                                       
-                      WELCOME TO 
-      __________________  __  _______________
-        -----/ ____/ __ \/  |/  / ____/_  __/
-          --/ /   / / / / /|_/ / __/   / /
-           / /___/ /_/ / /  / / /___  / /
-           \____/\____/_/  /_/_____/ /_/
+                                                        Based on CentOS Linux 8
+                                                                    ID: #000002
 
-###############################################################################
-NOTICE:
-The Expanse login nodes are not to be used for running processing tasks. 
-This includes running Jupyter notebooks and the like.  All processing 
-jobs should be submitted as jobs to the batch scheduler.  If you don’t 
-know how to do that see the Expanse user guide 
-https://www.sdsc.edu/support/user_guides/expanse.html#running.
-Any tasks found running on the login nodes in violation of this policy
- may be terminated immediately and the responsible user locked out of 
-the system until they contact user services.
-###############################################################################
+--------------------------------------------------------------------------------
+
+                                 WELCOME TO
+                  _______  __ ____  ___    _   _______ ______
+                 / ____/ |/ // __ \/   |  / | / / ___// ____/
+                / __/  |   // /_/ / /| | /  |/ /\__ \/ __/
+               / /___ /   |/ ____/ ___ |/ /|  /___/ / /___
+              /_____//_/|_/_/   /_/  |_/_/ |_//____/_____/
+
+--------------------------------------------------------------------------------
+
+Use the following commands to adjust your environment:
+
+'module avail'            - show available modules
+'module add <module>'     - adds a module to your environment for this session
+'module initadd <module>' - configure module to be loaded at every login
+
+-------------------------------------------------------------------------------
+Last login: Mon Nov 11 13:51:39 2020 from 12.34.56.78
 [username@login02 ~]$
 ```
 
