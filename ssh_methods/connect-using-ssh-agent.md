@@ -1,17 +1,26 @@
-(base) localhost:tools username$ cat howto.setup.ssh-agent.locally.txt 
-# ssh-agent is a program to hold private keys used for public key authentication (RSA, DSA, ECDSA, Ed25519).
+# Managing SSH Connections using SSH-Agent
+
+
+## About SSH-Agent
+is a program to hold private keys used for public key authentication (RSA, DSA, ECDSA, Ed25519).
   
 
-######
-# verify that the ssh-agent is running
-######
+## How to setup SSH-Agent
+
+### Verify that the ssh-agent is running
+```
 (base) localhost:~ username$ ssh-add -l
 The agent has no identities.
+```
 
-# cd into your .ssh directory:
+### cd into your .ssh directory:
+```
 (base) localhost:~ username$ cd ~/.ssh
+```
 
-# generate a new key:
+### Generate a New Key:
+Create a new key with a unique name and password:
+```
 (base) localhost:~ username$ ssh-keygen -t rsa -b 2048 -f sdsc_id_rsa
 Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase): 
@@ -40,36 +49,37 @@ drwxr-xr-x+ 98 username  staff  3136 May 29 11:31 ..
 -rw-------   1 username  staff   324 Apr 25 14:03 config
 -rw-------   1 username  staff  1876 May 29 11:31 sdsc_id_rsa
 -rw-r--r--   1 username  staff   397 May 29 11:31 sdsc_id_rsa.pub
+```
 
-######
-# add the new key to the ssh-agent:
-######
+### Add the New Key to the ssh-agent:
+```python
 (base) localhost:.ssh username$ ssh-add sdsc_id_rsa 
 Enter passphrase for sdsc_id_rsa: 
 Identity added: sdsc_id_rsa (username@localhost)
+```
+ 
+### Check that the New Key was Added
 
-######
-# check that the new key was added
-######
+```
 (base) localhost:.ssh username$ ssh-add -l
 2048 SHA256:Y2pBZAvYkn2q5BWrbF2nh2kxas8KdxM0IPWMjIGPlaI username@localhost (RSA)
+```
 
-######
-# copy the public key information to your remote account
-# this will be added to your authorized_keys file
-######
+### Save public key
+copy the public key information to your remote account
+This will be added to your authorized_keys file
+
+```
 (base) localhost:.ssh username$ ssh-copy-id username@comet.sdsc.edu
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
 /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
 
 Number of key(s) added:        1
+```
 
-Now try logging into the machine, with:   "ssh 'username@comet.sdsc.edu'"
-and check to make sure that only the key(s) you wanted were added.
-
-######
-# try to logon
-######
+### Log onto HPC system
+Now try logging into the machine, with:   
+```
 (base) localhost$ ssh username@comet.sdsc.edu
 Last login: Fri May 29 10:10:09 2020 from 76.176.117.51
 Rocks 7.0 (Manzanita)
@@ -95,4 +105,8 @@ Any tasks found running on the login nodes in violation of this policy
 the system until they contact user services.
 ###############################################################################
 (base) [username@comet-ln2:~] 
+```
+
+Check to make sure that only the key(s) you wanted were added.
+
 
