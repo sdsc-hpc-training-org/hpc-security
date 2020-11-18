@@ -8,7 +8,7 @@ To connect to an SDSC HPC system, you need the following:
 * A *terminal* client running on your laptop that can be used to connect to Expanse. 
 * The *SSH* application running in the terminal to make the connection. 
 
-<img src="./images/ssh_login_expanse.png" alt="SSH Connection" width="300px" />
+<img src="./images/ssh-login-comet.png" alt="SSH Connection" width="300px" />
 
 Terminal applications are used to connect clients (you and your laptop) to remote computers (such as Expanse). See https://en.wikipedia.org/wiki/Terminal_emulator for more information. The best known example of using a terminal is for logging in/connecting to a remote computer systems by users. This is called a client-server connection. Terminals are interactive: you type in a command to run, and the outputs are displayed on the terminal. Executing any command is done by typing it and pressing Enter.
 
