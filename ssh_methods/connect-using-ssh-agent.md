@@ -1,9 +1,11 @@
-# Managing SSH Connections using SSH-Agent
+# Managing SSH Connections using SSH-Agent Forwarding
 
+SH agent forwarding allows you to use your local SSH keys instead of leaving keys (without passphrases!) sitting on your remote account. 
+This document will show you how to set up SSH-Agent forewarding between your laptop and the remote SDSC Expanse system.
+SSH forwarding using github as remote service to pull our code into the host.
 
 ## About SSH-Agent
-is a program to hold private keys used for public key authentication (RSA, DSA, ECDSA, Ed25519).
-  
+SSH-Agent is a program used to hold private keys used for public key authentication (RSA, DSA, ECDSA, Ed25519).  See: [https://www.ssh.com/ssh/agent](https://www.ssh.com/ssh/agent).
 
 ## How to setup SSH-Agent
 
