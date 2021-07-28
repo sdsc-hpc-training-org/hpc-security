@@ -50,7 +50,7 @@ You will be directed to the *XSEDE portal*, where you will create a *Portal User
 <hr>
 
 
-## Locate/Install the Terminal App <a name="term-app"></a>
+## Locate or Install the Terminal App <a name="term-app"></a>
 
 *NOTE: The `hostname` for Expanse is `expanse.sdsc.edu`
 
