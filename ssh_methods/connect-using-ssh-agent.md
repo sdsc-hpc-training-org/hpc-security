@@ -72,7 +72,7 @@ copy the public key information to your remote account
 This will be added to your authorized_keys file
 
 ```
-(base) localhost:.ssh username$ ssh-copy-id username@comet.sdsc.edu
+(base) localhost:.ssh username$ ssh-copy-id username@login.expanse.sdsc.edu
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
 /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
 
@@ -82,31 +82,31 @@ Number of key(s) added:        1
 ### Log onto HPC system
 Now try logging into the machine, with:   
 ```
-(base) localhost$ ssh username@comet.sdsc.edu
-Last login: Fri May 29 10:10:09 2020 from 76.176.117.51
-Rocks 7.0 (Manzanita)
-Profile built 12:32 03-Dec-2019
+localhost$ ssh username@login.expanse.sdsc.edu
+Welcome to Bright release         9.0
 
-Kickstarted 13:47 03-Dec-2019
-                                                                       
-                      WELCOME TO 
-      __________________  __  _______________
-        -----/ ____/ __ \/  |/  / ____/_  __/
-          --/ /   / / / / /|_/ / __/   / /
-           / /___/ /_/ / /  / / /___  / /
-           \____/\____/_/  /_/_____/ /_/
-###############################################################################
-NOTICE:
-The Comet login nodes are not to be used for running processing tasks.
-This includes running Jupyter notebooks and the like.  All processing
-jobs should be submitted as jobs to the batch scheduler.  If you don’t
-know how to do that see the Comet user guide
-https://www.sdsc.edu/support/user_guides/comet.html#running.
-Any tasks found running on the login nodes in violation of this policy
- may be terminated immediately and the responsible user locked out of
-the system until they contact user services.
-###############################################################################
-(base) [username@comet-ln2:~] 
+                                                        Based on CentOS Linux 8
+                                                                    ID: #000002
+
+--------------------------------------------------------------------------------
+
+                                 WELCOME TO
+                  _______  __ ____  ___    _   _______ ______
+                 / ____/ |/ // __ \/   |  / | / / ___// ____/
+                / __/  |   // /_/ / /| | /  |/ /\__ \/ __/
+               / /___ /   |/ ____/ ___ |/ /|  /___/ / /___
+              /_____//_/|_/_/   /_/  |_/_/ |_//____/_____/
+
+--------------------------------------------------------------------------------
+
+Use the following commands to adjust your environment:
+
+'module avail'            - show available modules
+'module add <module>'     - adds a module to your environment for this session
+'module initadd <module>' - configure module to be loaded at every login
+
+-------------------------------------------------------------------------------
+[username@login02 ~]$ 
 ```
 
 Check to make sure that only the key(s) you wanted were added.
