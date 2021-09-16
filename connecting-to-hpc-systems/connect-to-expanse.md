@@ -4,7 +4,7 @@
 [//]: # ( Comment2 )
 
 <a name="top"></a>Contents:
-* [About Connecting to Expanse or other HPC Systems](#connecting)    
+* [Connecting to HPC Systems](#connecting)    
 * [Obtain your Expanse account](#expanse-account)
 * [Install/Locate the Terminal App](#term-app)
     - [Linux ](#term-linux)
@@ -31,7 +31,7 @@ To connect to an SDSC HPC system, you need the following:
 
 Terminal applications are used to connect clients (you and your laptop) to remote computers (such as Expanse). See https://en.wikipedia.org/wiki/Terminal_emulator for more information. The best known example of using a terminal is for logging in/connecting to a remote computer systems by users. This is called a client-server connection. Terminals are interactive: you type in a command to run, and the outputs are displayed on the terminal. Executing any command is done by typing it and pressing Enter.
 
-SSH provides a secure channel over any network in a client-server architecture (see https://en.wikipedia.org/wiki/Secure_Shell). You will be using your laptop to access SDSC’s HPC systems using the secure shell command `ssh`. It is essential that you be able to run secure shell (or a similar connection tool) with X11 forwarding enabled, which allows you to have data encryption and to launch windows applications (e.g. plotting, or a browser).
+SSH provides a secure channel over any network in a client-server architecture (see https://en.wikipedia.org/wiki/Secure_Shell). You will be using your laptop to access SDSC’s HPC systems using the secure shell command `ssh`. It is essential that you be able to run secure shell (or a similar connection tool) with X11 forwarding enabled, which allows you to have data encryption and to launch windows applications (e.g. plotting, or a browser). There are multiple ways to connect via SSH, see [here](https://github.com/sdsc-hpc-training-org/hpc-security/tree/master/ssh_methods) for more information.
 
 This tutorial can be used to verify that your account is working, that your laptop is properly configured, and that your Expanse user environment is correctly setup. If you are new to Unix, please see the [Basic Linux Skills](https://github.com/sdsc-hpc-training-org/basic_skills) tutorial.
 
@@ -102,7 +102,9 @@ Older Windows users will need to run an X Server and an ssh-like client. [Cygwin
 ## InstallLocate Secure Shell (SSH) App <a name="ssh"></a>
 For connecting to SDSC systems, we recommend using [Secure Shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell). 
 
-*NOTE:* Using Null passphrase SSH public keys is *not* recommended for SDSC HPC systems; to automate your connections use the SSH-Agent command. For more information, see the [SDSC Security Repo](https://github.com/sdsc-hpc-training-org/hpc-security)
+*NOTE1:* Using Null passphrase SSH public keys is *not* recommended for SDSC HPC systems; to automate your connections use the SSH-Agent command. For more information, see the [SDSC Security Repo](https://github.com/sdsc-hpc-training-org/hpc-security)
+ 
+*NOTE2:*  See [here](https://github.com/sdsc-hpc-training-org/hpc-security/tree/master/ssh_methods) for information on various methods for using SSH to securely connect to HPC systems.
  
 [Back to Top](#top)
 <hr>
