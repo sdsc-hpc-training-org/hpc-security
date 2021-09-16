@@ -3,22 +3,8 @@
 
 [//]: # ( Comment2 )
 
-To connect to an SDSC HPC system, you need the following:
-* A *expanse* account.
-* A *terminal* client running on your laptop that can be used to connect to Expanse. 
-* The *SSH* application running in the terminal to make the connection. 
-
-<img src="./images/ssh_login.png" alt="SSH Connection" width="300px" />
-
-Terminal applications are used to connect clients (you and your laptop) to remote computers (such as Expanse). See https://en.wikipedia.org/wiki/Terminal_emulator for more information. The best known example of using a terminal is for logging in/connecting to a remote computer systems by users. This is called a client-server connection. Terminals are interactive: you type in a command to run, and the outputs are displayed on the terminal. Executing any command is done by typing it and pressing Enter.
-
-SSH provides a secure channel over any network in a client-server architecture (see https://en.wikipedia.org/wiki/Secure_Shell). You will be using your laptop to access SDSC’s HPC systems using the secure shell command `ssh`. It is essential that you be able to run secure shell (or a similar connection tool) with X11 forwarding enabled, which allows you to have data encryption and to launch windows applications (e.g. plotting, or a browser).
-
-This tutorial can be used to verify that your account is working, that your laptop is properly configured, and that your Expanse user environment is correctly setup. If you are new to Unix, please see the [Basic Linux Skills](https://github.com/sdsc-hpc-training-org/basic_skills) tutorial.
-
 <a name="top"></a>Contents:
     
-* [Read the Expanse User Guide](#expanse-guide)
 * [Obtain your Expanse account](#expanse-account)
 * [Install/Locate the Terminal App](#term-app)
     - [Linux ](#term-linux)
@@ -30,16 +16,26 @@ This tutorial can be used to verify that your account is working, that your lapt
 * [Terminal Connection Example](#connect-example)
     - [Getting Domain Name & Host Information](#dn-info)
     - [Making the Connction](#connection)
+* [Read the Expanse User Guide](#expanse-guide)
 
 Note: if you have any difficulties completing these tasks, please contact Institute staff at <consult@sdsc.edu>.
 
-## Read the Expanse User Guide <a name="expanse-guide"></a>
 
-Please read the Expanse user guide and familiarize yourself with the hardware, file systems, batch job submission, compilers and modules. The guide can be found here:
-http://www.sdsc.edu/support/user_guides/expanse.html
+To connect to an SDSC HPC system, you need the following:
+* An *expanse* account.
+* A *terminal* client running on your laptop that can be used to connect to Expanse. 
+* The *SSH* application running in the terminal to make the connection. 
 
-Once you are logged onto Expanse, you can begin working with your code. For more help on using Expanse, see the [Expanse 101](https://github.com/sdsc-hpc-training-org/expanse-101) tutorial
- 
+<img src="./images/ssh_login.png" alt="SSH Connection" width="300px" />
+
+Terminal applications are used to connect clients (you and your laptop) to remote computers (such as Expanse). See https://en.wikipedia.org/wiki/Terminal_emulator for more information. The best known example of using a terminal is for logging in/connecting to a remote computer systems by users. This is called a client-server connection. Terminals are interactive: you type in a command to run, and the outputs are displayed on the terminal. Executing any command is done by typing it and pressing Enter.
+
+SSH provides a secure channel over any network in a client-server architecture (see https://en.wikipedia.org/wiki/Secure_Shell). You will be using your laptop to access SDSC’s HPC systems using the secure shell command `ssh`. It is essential that you be able to run secure shell (or a similar connection tool) with X11 forwarding enabled, which allows you to have data encryption and to launch windows applications (e.g. plotting, or a browser).
+
+This tutorial can be used to verify that your account is working, that your laptop is properly configured, and that your Expanse user environment is correctly setup. If you are new to Unix, please see the [Basic Linux Skills](https://github.com/sdsc-hpc-training-org/basic_skills) tutorial.
+
+
+
 ## Obtain your Expanse account <a name="expanse-account"></a>
 
 To obtain a trial Expanse account see the Expanse user guide at  http://www.sdsc.edu/support/user_guides/expanse.html#trial_accounts
@@ -173,3 +169,11 @@ Last login: Mon Nov 11 13:51:39 2020 from 12.34.56.78
 
 [Back to Top](#top)
 <hr>
+
+## Read the Expanse User Guide <a name="expanse-guide"></a>
+
+Please read the Expanse user guide and familiarize yourself with the hardware, file systems, batch job submission, compilers and modules. The guide can be found here:
+http://www.sdsc.edu/support/user_guides/expanse.html
+
+Once you are logged onto Expanse, you can begin working with your code. For more help on using Expanse, see the [Expanse 101](https://github.com/sdsc-hpc-training-org/expanse-101) tutorial
+ 
