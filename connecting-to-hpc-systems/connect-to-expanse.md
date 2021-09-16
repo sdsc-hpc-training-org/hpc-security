@@ -4,7 +4,7 @@
 [//]: # ( Comment2 )
 
 <a name="top"></a>Contents:
-    
+* [About Connecting to Expanse or other HPC Systems](#connecting)    
 * [Obtain your Expanse account](#expanse-account)
 * [Install/Locate the Terminal App](#term-app)
     - [Linux ](#term-linux)
@@ -20,6 +20,7 @@
 
 Note: if you have any difficulties completing these tasks, please contact Institute staff at <consult@sdsc.edu>.
 
+## Connecting to HPC Systems <a name="connecting"></a>
 
 To connect to an SDSC HPC system, you need the following:
 * An *expanse* account.
