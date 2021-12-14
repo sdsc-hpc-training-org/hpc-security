@@ -1,5 +1,3 @@
-## Connection over SSH Tunneling
-
 ## Security with SSH Tunneling
 Connection to Notebook over SSH tunneling (secure)
 
