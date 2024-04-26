@@ -1,5 +1,10 @@
-## Security with SSH Tunneling
-Connection to Notebook over SSH tunneling (secure)
+# Secure connections to the Comet Supercomputing using SSH Tunneling
+Updated: 4/25/2024
+
+In this tutorial, we describe how to run Jupyter Notebooks using SSH tunneling (secure)
+
+## To run secure notebooks on SDSC clusters, use the _galyleo_ script
+
 
 ![connection over HTTP](https://github.com/sdsc-hpc-training-org/notebooks-101/blob/master/Docs/images/jupyter-notebook-http-ssh-tunnel.png?raw=true)
 
