@@ -6,7 +6,7 @@
 * The topics covered include logging in to SDSC's HPC resources, file and directory permissions, and common practices that may create trouble.
 
 ## Link to Interactive Video:
-[Indispensable Security: Tips to Use SDSC's HPC Resources Securely](https://education.sdsc.edu/training/interactive/202007_security_tips/index.php)
+[Indispensable Security: Tips to Use SDSC's HPC Resources Securely](https://education.sdsc.edu/training/interactive/?id=202007_CometWebinar)
 
 ## Using SSH-Agent for more secure SSH Connections:
 * Learn how to set up SSH-Agent forewarding between your laptop and the remote SDSC Expanse system
