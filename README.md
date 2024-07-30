@@ -14,7 +14,7 @@
 
 ## Secure connections using SSH Tunneling
 * Tutorial on how to set up SSH tunneling
-[Connection over SSH Tunneling](https://github.com/sdsc-hpc-training-org/hpc-security/blob/master/ssh_methods/tunneling.md)
+[Connection over SSH Tunneling](https://github.com/sdsc-hpc-training-org/hpc-security/blob/master/ssh_methods/ssh-tunneling-is-more-secure.md)
 
 ## Link to GitHub Repo:
 https://github.com/sdsc-hpc-training-org/hpc-security
