@@ -10,7 +10,7 @@
 
 ## Using SSH-Agent for more secure SSH Connections:
 * Learn how to set up SSH-Agent forewarding between your laptop and the remote SDSC Expanse system
-[Managing SSH Connections using SSH-Agent Forwarding](https://github.com/sdsc-hpc-training-org/hpc-security/blob/master/ssh_methods/connect-using-ssh-agent.md)
+[Managing SSH Connections using SSH-Agent Forwarding](https://github.com/sdsc-hpc-training-org/hpc-security/blob/master/ssh_methods/connect-using-ssh-agent-is-more-secure.md)
 
 ## Secure connections using SSH Tunneling
 * Tutorial on how to set up SSH tunneling
